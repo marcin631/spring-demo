@@ -12,7 +12,7 @@ public class MyController {
         return"welcome";
     }
 
-
+    @GetMapping({"/car"})
     public String myFavoriteCar(Model model)
     {
         model.addAttribute("car", "audi");
